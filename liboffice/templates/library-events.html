@@ -1,0 +1,55 @@
+{% extends 'mainbook.html' %}
+
+{% block title %} library-events Page {% endblock %}
+{% block content %}
+ <!-- library_events.html -->
+    <div class="container mt-5">
+        <h1>Upcoming Library Events</h1>
+        <p>Join us for a variety of events at the library! Check out the list below and register today.</p>
+
+        <h3>Upcoming Events</h3>
+        <div class="event">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Author Meet & Greet</h5>
+                    <p class="card-text"><strong>Date:</strong> March 15, 2025 | <strong>Time:</strong> 2:00 PM - 4:00 PM</p>
+                    <p class="card-text">Meet your favorite local authors and hear about their latest books! Free for members.</p>
+                    <a href="#" class="btn btn-primary">Register</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="event">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Book Club: Science Fiction</h5>
+                    <p class="card-text"><strong>Date:</strong> March 20, 2025 | <strong>Time:</strong> 6:00 PM - 8:00 PM</p>
+                    <p class="card-text">Join our book club and discuss the latest science fiction releases. Open to all members.</p>
+                    <a href="#" class="btn btn-primary">Register</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="event">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Children's Story Time</h5>
+                    <p class="card-text"><strong>Date:</strong> March 25, 2025 | <strong>Time:</strong> 10:00 AM - 11:00 AM</p>
+                    <p class="card-text">Bring your little ones for an hour of exciting stories and activities! Free for families.</p>
+                    <a href="#" class="btn btn-primary">Register</a>
+                </div>
+            </div>
+        </div>
+
+        <hr>
+
+        <h3>Past Events</h3>
+        <p>Check out some of the past events that have taken place at the library.</p>
+        <ul>
+            <li><strong>Film Screening: The Great Gatsby</strong> – February 2025</li>
+            <li><strong>Writing Workshop</strong> – January 2025</li>
+            <li><strong>Book Swap Event</strong> – December 2024</li>
+        </ul>
+    </div>
+
+{% endblock %}

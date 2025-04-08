@@ -1,0 +1,99 @@
+{% extends "mainbase.html" %}
+{% load static %}
+{% block title %}Base Page{% endblock %}
+
+{% block content %}
+
+<!-- Video Slideshow with Smooth Fade Effect -->
+<div id="carouselExample" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
+    <div class="carousel-inner">
+        <div class="carousel-item active fade">
+            <video autoplay muted loop class="d-block w-100" style="height: 500px; object-fit: cover;">
+                <source src="{% static 'videos/library1.mp4' %}" type="video/mp4">
+            </video>
+            <div class="carousel-caption d-none d-md-block" style="background: rgba(0, 0, 0, 0.6); padding: 10px; border-radius: 10px;">
+                <h5 style="color: #fff;">University Library</h5>
+                <p style="color: #ddd;">Explore a vast collection of books and resources.</p>
+            </div>
+        </div>
+        <div class="carousel-item fade">
+            <video autoplay muted loop class="d-block w-100" style="height: 500px; object-fit: cover;">
+                <source src="{% static 'videos/library2.mp4' %}" type="video/mp4">
+            </video>
+            <div class="carousel-caption d-none d-md-block" style="background: rgba(0, 0, 0, 0.6); padding: 10px; border-radius: 10px;">
+                <h5 style="color: #fff;">Modern Study Area</h5>
+                <p style="color: #ddd;">A peaceful environment for reading and learning.</p>
+            </div>
+        </div>
+        <div class="carousel-item fade">
+            <video autoplay muted loop class="d-block w-100" style="height: 500px; object-fit: cover;">
+                <source src="{% static 'videos/library3.mp4' %}" type="video/mp4">
+            </video>
+            <div class="carousel-caption d-none d-md-block" style="background: rgba(0, 0, 0, 0.6); padding: 10px; border-radius: 10px;">
+                <h5 style="color: #fff;">Extensive Book Collection</h5>
+                <p style="color: #ddd;">Find books from various genres and authors.</p>
+            </div>
+        </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    </button>
+</div>
+
+<!-- Featured Books Section -->
+<div class="container mt-5">
+    <h2 class="text-center mb-4">Featured Books</h2>
+    <div class="row">
+        <div class="col-md-4">
+            <div class="card">
+                <img src="https://images.pexels.com/photos/159866/books-book-pages-read-literature-159866.jpeg?auto=compress&cs=tinysrgb&w=600/300x200" class="card-img-top" alt="Book 1">
+                <div class="card-body">
+                    <h5 class="card-title">Economy</h5>
+                    <p class="card-text">Poverty and taxes in future generations.</p>
+                    <a href="#" class="btn btn-primary">Read More</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <img src="https://images.pexels.com/photos/46274/pexels-photo-46274.jpeg?auto=compress&cs=tinysrgb&w=600/300x200" class="card-img-top" alt="Book 2">
+                <div class="card-body">
+                    <h5 class="card-title">Social Science</h5>
+                    <p class="card-text">Gaining some knowledges about world.</p>
+                    <a href="#" class="btn btn-primary">Read More</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <img src="https://images.pexels.com/photos/762686/pexels-photo-762686.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1/300x200" class="card-img-top" alt="Book 3">
+                <div class="card-body">
+                    <h5 class="card-title">AI Generation</h5>
+                    <p class="card-text">In future AI impact all over the world.</p>
+                    <a href="#" class="btn btn-primary">Read More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Footer -->
+<footer class="bg-dark text-white text-center py-4 mt-5">
+    <div class="container">
+        <p>&copy; 2025 Arav Library. All rights reserved.</p>
+        <p>
+            <a href="{% url 'privacy_policy' %}" class="text-white">Privacy Policy</a> | 
+            <a href="{% url 'terms' %}" class="text-white">Terms of Service</a>
+        </p>
+        <p>Follow us on:
+            <a href="#" class="text-white ms-2"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#" class="text-white ms-2"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#" class="text-white ms-2"><i class="fa-brands fa-instagram"></i></a>
+        </p>
+    </div>
+</footer>
+
+{% endblock %}

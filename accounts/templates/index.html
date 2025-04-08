@@ -1,0 +1,20 @@
+{% extends 'mainindex.html' %}
+{% load static %}
+
+{% block content %}
+<!-- Background Video -->
+<video autoplay muted loop id="myVideo">
+    <source src="{% static 'videos/library_management.mp4' %}" type="video/mp4">
+</video>
+
+<!-- Centered Content -->
+<div class="content">
+    <h1 class="display-1">Welcome to Our Library</h1>
+    <p class="lead">To access the site, please login or register first.</p>
+    <p class="lead">Explore a wide variety of books, articles, and resources.</p>
+    <div class="mt-4">
+        <a href="{% url 'login_view' %}" class="btn btn-primary btn-lg">Login</a>
+        <a href="{% url 'register_view' %}" class="btn btn-success btn-lg">Register</a>
+    </div>
+</div>
+{% endblock %}

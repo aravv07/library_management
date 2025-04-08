@@ -1,0 +1,56 @@
+{% extends 'mainbook.html' %}
+
+{% block title %} Catalog Page {% endblock %}
+
+{% block content %}
+  <!-- catalog.html -->
+    <div class="container mt-5">
+        <h1>Welcome to the Library Catalog</h1>
+        <p>Browse through our extensive collection of books and resources.</p>
+
+        <!-- Search Form -->
+        <div class="search-form">
+            <form action="#" method="get">
+                <input type="text" name="query" class="form-control" placeholder="Search for books, authors, or categories...">
+                <button type="submit" class="btn btn-primary mt-2">Search</button>
+            </form>
+        </div>
+
+        <!-- Featured Books -->
+        <h3>Featured Books</h3>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://images.pexels.com/photos/256450/pexels-photo-256450.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1/150" class="card-img-top" alt="Book 1">
+                    <div class="card-body">
+                        <h5 class="card-title">THE PASSION WITHIN</h5>
+                        <p class="card-text">Go through your life.</p>
+                        <a href="#" class="btn btn-primary">View Details</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://images.pexels.com/photos/9312724/pexels-photo-9312724.jpeg?auto=compress&cs=tinysrgb&w=600/150" class="card-img-top" alt="Book 2">
+                    <div class="card-body">
+                        <h5 class="card-title">SABAHATTIN ALI</h5>
+                        <p class="card-text">Author told his own tragedy story</p>
+                        <a href="#" class="btn btn-primary">View Details</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://images.pexels.com/photos/15450205/pexels-photo-15450205/free-photo-of-book-with-red-cover.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1/150" class="card-img-top" alt="Book 3">
+                    <div class="card-body">
+                        <h5 class="card-title">JAMES PATTERSON</h5>
+                        <p class="card-text">mindblowing ending.</p>
+                        <a href="#" class="btn btn-primary">View Details</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+{% endblock %}

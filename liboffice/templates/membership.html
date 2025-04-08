@@ -1,0 +1,59 @@
+{% extends 'mainbook.html' %}
+
+{% block title %} Membership {% endblock %}
+{% block content %}
+<!-- membership.html -->
+    <div class="container mt-5">
+        <h1>Library Membership</h1>
+        <p>Join our library and enjoy a wide range of benefits. Here are the available membership tiers:</p>
+
+        <h3>Membership Tiers</h3>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Basic Membership</h5>
+                        <p class="card-text">Access to borrowing up to 5 books per month, basic events, and library resources.</p>
+                        <p class="card-text"><strong>Price: $20/year</strong></p>
+                        <a href="#" class="btn btn-primary">Sign Up</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Premium Membership</h5>
+                        <p class="card-text">Unlimited book borrowing, premium event access, and priority booking for library resources.</p>
+                        <p class="card-text"><strong>Price: $50/year</strong></p>
+                        <a href="#" class="btn btn-primary">Sign Up</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Family Membership</h5>
+                        <p class="card-text">Access for up to 4 family members, family-friendly events, and priority service.</p>
+                        <p class="card-text"><strong>Price: $80/year</strong></p>
+                        <a href="#" class="btn btn-primary">Sign Up</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <hr>
+
+        <!-- Benefits Section -->
+        <h3>Membership Benefits</h3>
+        <ul>
+            <li>Access to exclusive library events and workshops.</li>
+            <li>Discounts on book sales and other library programs.</li>
+            <li>Priority access to new books and resources.</li>
+            <li>Free access to online educational resources.</li>
+        </ul>
+
+        <p>If you're ready to join, click the "Sign Up" button above to choose your membership tier!</p>
+    </div>
+
+
+{% endblock %}

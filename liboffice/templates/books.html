@@ -1,0 +1,51 @@
+
+{% extends 'mainbook.html' %}
+
+{% block title %} Book Page {% endblock %}
+
+{% block content %}
+    <!-- Additional Book Section -->
+    <div class="container mt-5">
+        <h2 class="text-center mb-4">New Arrivals</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://images.pexels.com/photos/19946170/pexels-photo-19946170/free-photo-of-skeleton-figurine-on-a-shelf.jpeg?auto=compress&cs=tinysrgb&w=600/300x200" class="card-img-top" alt="Book 4">
+                    <div class="card-body">
+                        <h5 class="card-title">Moby Dick</h5>
+                        <p class="card-text">Herman Melville's epic tale of obsession and revenge on the high seas.</p>
+                        <a href="#" class="btn btn-primary">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://images.pexels.com/photos/1480335/pexels-photo-1480335.jpeg?auto=compress&cs=tinysrgb&w=600/300x200" class="card-img-top" alt="Book 5">
+                    <div class="card-body">
+                        <h5 class="card-title">Pride and Prejudice</h5>
+                        <p class="card-text">Jane Austen’s beloved novel exploring themes of love and social standing.</p>
+                        <a href="#" class="btn btn-primary">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://images.pexels.com/photos/3847617/pexels-photo-3847617.jpeg?auto=compress&cs=tinysrgb&w=600/300x200" class="card-img-top" alt="Book 6">
+                    <div class="card-body">
+                        <h5 class="card-title">The Catcher in the Rye</h5>
+                        <p class="card-text">J.D. Salinger’s novel following the life of the young and rebellious Holden Caulfield.</p>
+                        <a href="#" class="btn btn-primary">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3 mt-5">
+        <p>&copy; 2025 Library Management. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
+
+{% endblock %}
